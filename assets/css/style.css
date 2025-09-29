@@ -1,0 +1,222 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #b2ccfd;
+  color: #1f2937; 
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #004c83; 
+}
+
+a {
+  color: #2563eb; 
+  text-decoration: none; 
+  transition: color 0.2s;
+}
+a:hover {
+  color: #1d4ed8; 
+}
+
+/* Search engine*/
+
+.search-box {
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+}
+
+.search-box input {
+  width: 90%;
+  max-width: 400px;
+  padding: 0.6rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 9999px; 
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-box input:focus {
+  border-color: #2563eb; 
+}
+
+/* Daftar surah */
+#surah-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 1rem;
+}
+
+.surah-item {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-top: 4px solid #3b82f6; 
+}
+
+.surah-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.surah-item h3 {
+  font-size: 1.1rem;
+  color: #111827;
+  margin-bottom: 0.3rem;
+}
+
+.surah-item p {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+#surah-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+#surah-info {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #374151;
+}
+
+#ayat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ayat-item {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.ayat-item p {
+  margin-bottom: 0.5rem;
+}
+
+.ayat-item p:first-child {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Amiri", "Scheherazade", serif;
+  color: #111827;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+  .surah-item h3 {
+    font-size: 1rem;
+  }
+}
+
+.site-footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  background: #3a77b5;
+  border-top: 1px solid #3b7dff;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* === DETAIL SURAT === */
+.detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#surah-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2563eb; 
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+#surah-info {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #374151;
+    font-size: 0.95rem;
+}
+
+#ayat-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ayat-item {
+    background: #ffffff;
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    border-left: 5px solid #10b981; 
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ayat-item:hover {  
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
+
+.ayat-item .ayat-arab {
+    direction: rtl;
+    font-family: 'Amiri', serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #111827;
+    margin-bottom: 0.5rem;
+    line-height: 2.2rem;
+    text-align: right;
+}
+
+
+.ayat-item .ayat-terjemah {
+    font-size: 1rem;
+    color: #374151;
+    text-align: left;
+    margin-top: 0.3rem;
+}
