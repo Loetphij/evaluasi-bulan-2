@@ -47,7 +47,7 @@ QuranLite/
 ---
 
 ## Link
-1. Link GitHub      :
-1. Link Web         : 
-3. Link Presentasi  :
-
+1. Link GitHub              : https://github.com/Loetphij/evaluasi-bulan-2.git
+2. Link Web                 : https://quran-lite-eight.vercel.app
+3. Link Presentasi (Canva)  : https://www.canva.com/design/DAG0V51I29A/IepZb7F0QBkLAe-VDlfxeg/edit?utm_content=DAG0V51I29A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+4. Link Presentasi (Youtube): https://youtu.be/9cRbda-1ozk?si=FL2l0Gy4EKbgr2G5
